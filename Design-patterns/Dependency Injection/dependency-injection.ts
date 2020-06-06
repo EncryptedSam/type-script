@@ -30,6 +30,20 @@ class Bike{
     }
 }
 
+
+var yamaha_rx_z = new Bike(new TwoStroke());
+console.log(yamaha_rx_z.engine.mmp)
+
+var yamaha_ybx = new Bike(new FourStroke());
+console.log(yamaha_ybx.engine.mmp)
+
+
+/**
+ * DI as a design pattern:
+ * DI is a coding pattern in which a class receives its dependencies 
+ * from external sources rather than creating them itself
+ */
+
 class Bikee{
     public engine:Engine;
     constructor(){
@@ -66,68 +80,17 @@ class Bikee{
 
 
 
-
-
-
-
-
-
-
-
-
-let employee = [
-    {"id":1,"name":"Andrew","age":30},
-    {"id":2,"name":"Brandon","age":25},
-    {"id":3,"name":"Christina","age":26},
-    {"id":4,"name":"Elena","age":28}
-  ]
-
-for(let emp of employee){
-    console.log(emp.id, emp.age, emp.name);
-}   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// var yamaha_rx_z = new Bike(new TwoStroke());
-// console.log(yamaha_rx_z.engine.mmp)
-
-// var yamaha_ybx = new Bike(new FourStroke());
-// console.log(yamaha_ybx.engine.mmp)
-
-
 /**
- * DI as a design pattern:
- * DI is a coding pattern in which a class receives its dependencies 
- * from external sources rather than creating them itself
+ * How For loop works
  */
 
-// class Bikee{
-//     public engine:Engine;
-//     constructor(){
-//         this.engine = new TwoStroke();
-//     }
+// let employee = [
+//     {"id":1,"name":"Andrew","age":30},
+//     {"id":2,"name":"Brandon","age":25},
+//     {"id":3,"name":"Christina","age":26},
+//     {"id":4,"name":"Elena","age":28}
+//   ]
+
+// for(let emp of employee){
+//     console.log(emp.id, emp.age, emp.name);
 // }
